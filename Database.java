@@ -7,6 +7,9 @@ Bugs and Criticisms are warmly welcome :)
 Happy Independence Day!
 Live Long Pakistan!
 (additional methods will be updated soon)
+Update#001: 4:06:56pm 14-August-2018 Tuesday
+   public boolean close()
+
 */
 package company;
 /* Connection Helper */
@@ -141,6 +144,14 @@ final public class Database {
         }catch(SQLException sql){
             return false;
         }
+    }
+    /* Close Database Connection */
+    public boolean close(){
+        try{
+            connection.close(); 
+            return true;
+        }catch(SQLException sql){
+            return false;}
     }
     
     
