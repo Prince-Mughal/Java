@@ -21,6 +21,9 @@ public class Main {
         if(database.insertInto("001,\"Prince Mughal\"")){
             System.out.println("Record Inserted.");
         }
+        if(database.close()){
+            System.out.println("Connection has been closed.");
+        }
     
     }
     
